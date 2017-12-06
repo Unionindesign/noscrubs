@@ -1,0 +1,13 @@
+.top-banner {
+	text-align: center;
+	font-family: 'Monoton', cursive;
+	color:#FE642E;
+
+/*==================*/
+/* GAME CONTENT AREA*/
+/*==================*/
+#scrub-quiz {
+    width: 100%;
+    clear: both;
+
+}
