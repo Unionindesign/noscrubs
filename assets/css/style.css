@@ -1,13 +1,38 @@
 .top-banner {
 	text-align: center;
 	font-family: 'Monoton', cursive;
-	color:#FE642E;
-
+	background-color:#FE642E;
+}
 /*==================*/
 /* GAME CONTENT AREA*/
 /*==================*/
 #scrub-quiz {
-    width: 100%;
-    clear: both;
+}
+#scrub-header {
+	text-align: center;
+	background-color: #76c4db;
+}
+.startBtnStyle {
 
+}
+
+.hideQuiz {
+	display: none;
+}
+
+#scrub-questions {
+	/* display: none;	 */
+	
+}
+.question-box {
+	border: 2px solid #777;
+	float: left;
+	padding: 5%;
+	margin-top:5%;
+	border-radius: 3%;
+}
+.question-img {
+	padding: 5%;
+	width:350px;
+	height: 300px;
 }
