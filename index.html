@@ -26,10 +26,11 @@
     <div class="row">
         <div class="col-md-12">
         <h3>Who or what is a Scrub?</h3>
-            <div class="col-md-3">
-                <img src="assets/images/lefteye.jpg" class="img-thumbnail" style="width: 100%;">
+            <div class="col-md-6">
+                <!-- <img src="assets/images/lefteye.jpg" class="img-thumbnail" style="width: 100%;"> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FrLequ6dUdM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-6">
                 <p>A scrub is a guy that thinks he's fly
                 He's also known as a busta
                 Always talkin' about what he wants
@@ -57,10 +58,10 @@
     <div class="row">
         <div class="col-md-12">
         <h3>Why should you not want any Scrubs?</h3>
-            <div class="col-md-3">
-                <img src="assets/images/tlc.jpg" class="img-thumbnail" style="width: 100%;">
+            <div class="col-md-4">
+                <img src="assets/images/lefteye.jpg" class="img-thumbnail" style="width: 100%;">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <p>If you don't have a car and you're walking
                 Oh yes son, I'm talking to you
                 If you live at home with your momma
@@ -110,7 +111,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                    <img class="card-img-top" src="https://media.istockphoto.com/photos/young-hospital-workers-in-scrubs-picture-id155824587?k=6&m=155824587&s=612x612&w=0&h=sWWG7dN7p_nBfGvxleaxLnugPSJ2EIDGdJeBYRslnN4=" style="width: 100%;">
+                    <img class="card-img-top" src="assets/images/tlc.jpg" style="width: 100%;">
                     <h3>A scrub can't get</h3>
                     <ul>  
                         <li>My number</li>
@@ -130,75 +131,178 @@
                     </ul>
                     </div>
                 </div>
-                <hr>
             </div> <!-- end of 3 collumns -->
+
+            
             
             
             <!-- ======================= NO SCRUB QUIZ ============== -->
         <div id="scrub-quiz">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Are you a scrub?</h1>
-                    <h5 class="italic">Once you hit the button, you have 30 seconds all of the questions as honestly as possible. Using our high-teach scrub percentage calculator, we'll find out if you are a scrub!</h5>
-                     <button type="button" class="button-primary btn-lg">Take the 'Are you a Scrub QUIZ!</button>    
 
-                <div id="scrub-questions">
-                    <div class="col-md-12">
-                    <p>How do you get around?</p>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Best friend's ride
-                        </label>
+            <div class="row">
+                <div class="col-md-12"><hr>
+                    <div id="scrub-header">
+                    <h1>Are you a scrub???</h1>
+                    <h5 class="italic">Once you hit the start button, you have 45 seconds all of the questions as honestly as possible, we'll find out if you are a scrub!</h5>
+                    
+                        <button id="start-button" type="button" class="button-primary btn-lg startBtnStyle">
+                            Take the 'Are you a Scrub' QUIZ!
+                        </button> 
+                     
+                    </div>  
+                </div>
+            </div>   
+
+        <div id="scrub-questions">
+            <div class="hideQuiz">
+                <div class="row">
+                    <!-- QUESTION CARD 1 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="assets/images/drunk-homer-on-couch.gif" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                How do you spend your time?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">I work a lot</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Spend time with friends or family</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">Sit on my broke ass</button><!--SCRUB-->                              
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Walking
-                        </label>
+                     </div> 
+                     
+                    <!-- QUESTION CARD 2 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="assets/images/bulldogGfCar.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                How do you get around?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Drive</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub click">Ride the bus</button><!--SCRUB-->
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">Walking</button><!--SCRUB-->                              
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline disabled">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> I own a car
-                        </label>
+                    </div>   
+                
+                    <!-- QUESTION CARD 3 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="assets/images/mcdonaldbrokeass.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                What do you do for a living?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">Work at McDonald's</button><!--SCRUB-->
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Succesful business</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Other job</button>                              
+                            </div>
                         </div>
-                        <br>
-                    <p>Where do you live</p>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Momma's house
-                        </label>
+                    </div>   
+
+                </div><!--ROW-->
+
+                 <div class="row">
+                    <!-- QUESTION CARD 4 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="assets/images/brokeass.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                How much money do you have?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Hard working, I do ok</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Baller Status</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">I don't have any money</button><!--SCRUB-->                              
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> crappy apartment
-                        </label>
+                        </div> 
+                        
+                        <!-- QUESTION CARD 5 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="assets/images/fryelowrider.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                What kind of car do you drive?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Toyota</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Lexus</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">I ride in my friends' car</button><!--SCRUB-->                              
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline disabled">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> baller house
-                        </label>
+                    </div>   
+                
+                        <!-- QUESTION CARD 6 -->
+                    <div class="col-md-4">
+                        <div class="card question-box">
+                            <img class="card-img-top question-img" src="https://media.giphy.com/media/26FPAhlYM749z1NIc/giphy.gif" alt="Card image cap">
+                            <div class="card-body">
+                            <h4 class="card-text text-center">
+                                It's Friday night - what are you doing?
+                            </h4>
+                            <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">At da club tryna Holla</button><!--SCRUB-->
+                            <button type="button" class="btn btn-primary btn-lg btn-block">VIP bottle service</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Working on Javascript</button>                              
+                            </div>
                         </div>
-                        <br>
-                    <p>How much money do you have</p>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> I make it rain
-                        </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> none, but still tryna holla
-                        </label>
-                        </div>
-                        <div class="form-check form-check-inline disabled">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> broke ass
-                        </label>
-                        </div>
-                 </div>    
-              </div>
-            </div>  
-        </div>    
-    </div> <!-- <ontainer-fluid>
+                    </div> 
+                </div><!--ROW-->
+
+    
+                <div class="row">
+                        <!-- QUESTION CARD 7 -->
+                        <div class="col-md-4">
+                            <div class="card question-box">
+                                <img class="card-img-top question-img" src="assets/images/notnowmom.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                <h4 class="card-text text-center">
+                                    Where do you live?
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Apartment</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">I own a palace</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">At my momma's house</button><!--SCRUB-->                              
+                                </div>
+                            </div>
+                            </div> 
+                            
+                            <!-- QUESTION CARD 8 -->
+                        <div class="col-md-4">
+                            <div class="card question-box">
+                                <img class="card-img-top question-img" src="https://media.giphy.com/media/ctEPkkOhvt46k/giphy.gif" alt="Card image cap">
+                                <div class="card-body">
+                                <h4 class="card-text text-center">
+                                    Do you dress to impress?
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Always Stylin'</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block scrub click">Look like trash</button><!--SCRUB-->
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Hipster</button>                              
+                                </div>
+                            </div>
+                        </div>   
+                    
+                            <!-- QUESTION CARD 9 -->
+                        <div class="col-md-4">
+                            <div class="card question-box">
+                                <img class="card-img-top question-img" src="https://media.giphy.com/media/erldqIniuBYo8/giphy.gif" alt="Card image cap">
+                                <div class="card-body">
+                                <h4 class="card-text text-center">
+                                    How's your game with the Ladies?
+                                </h4>
+                                <button type="button" class="btn btn-primary btn-lg btn-block scrub-click">Always tryna Holla</button><!--SCRUB-->
+                                <button type="button" class="btn btn-primary btn-lg btn-block">I'm a gentleman</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">I've got mad game</button>                              
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                 </div>   
+                </div> 
+            </div><!--#scrub-questions -->
+        </div>  
+    </div>    
+</div> <!-- <ontainer-fluid>
     <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
