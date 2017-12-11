@@ -1,27 +1,57 @@
 // No Scrubs Quiz!
 
 //start with button on click
-$( '#start-button' ).on('click',function() {
+$('#start').on('click',function() {
+    // console.log("CLLICKed");   Button is working
+    quiz.start();
 
+    var quiz = {
+        numQuestions: 9,
+        counter: 60,
+        countdown: function () {
+            quiz.counter--;
+            $('#counter').html(quiz.counter);
+            if(quiz.counter<=0) {
+                console.log("Time is up Scrub!");
+                quiz.done();
+            }
+        },
+        start: function() {
+            timer = setInterval(quiz.countdown, 1000);
+            $('#scrub-questions').prepend('<h2>Time Remaining: <span id="counter">60</span> Seconds</h2>');
+        },
+  
+        done: function () {
+
+        let scrubsClicked =
+        count = 0;        
+        $('.scrub-click').click( function() {
+            count +=1;
+            + count;
+            // var num = $(this).find('.num');
+            // num.text ( parseInt(num.text()) + 1);
+        clearInterval(timer);
+        },
+        var scrubPercentage = quiz.numQuestions/scrubsClicked;
+
+        $('#scrub-questions').append('<h3>Your scrub percentage is " +scrubPercentage "</h3>');
+    }
     
-    // displays html
-    $('#scrub-questions').removeClass('hideQuiz');
+})
+    // HEre are multiple attempts to get the html question cards to start with propert
+    // display: none and then reapper:
 
-    //removes the start-button
+    // $('#scrub-questions').removeClass('hideQuiz'); tried adding a class the id and remove
+
+    // removes the start-button
         // $('#scrub-header').remove();
 
-
-    // if (scrub-questions.style.display === "none") {
-    //     scrub-questions.style.display = "block";
+    // var hideQuiz = document.getElementById("#hideQuiz");
+    // if (hideQuiz.style.display === "none") {
+    //     hideQuiz.style.display = "block";
     // } else {
-    //     scrub-questions.style.display = "none";
-    
-
-})
-
-
-
-    // function quizVisible() {
+    //     hideQuiz.style.display = "none";
+    // }
 
     //hide html div, so appears on start function
             // $("scrub-questions").toggle();
@@ -31,28 +61,3 @@ $( '#start-button' ).on('click',function() {
             // $( "#scrub-questions:hidden" ).show( "fast" );
             
             // var showQuiz = document.getElementById("scrub-questions");
-  
-    
-    
-
-    //countdown begins for xxx seconds
-    
-
-
-
-        //IF  scrubAnswer = True , add to scrubTotal
-
-        //TODO: radio buttons talk to js, only one can be selected
-       
-        // else if false, add to noScrubTotal 
-
-        //timeout, or when all questions answered <- ??
-
-            //Calculate based on scrubTotal v no srub total
-            //Calculate based on div class .scrub-click (make a div class on just those answers, and then #12??/'scrub-clicks')
-                //if result in between 1-3, 3-5, 6-8,9-9..9 100% different results
-
-                // restart button
-
-                // home page button
-
